@@ -17,7 +17,7 @@
    npm install
 4. **Запустите backend-сервер**
    ```bash
-   npx json-server --watch db.json --port 30015
+   json-server --watch public/data.json --port 3001
 6. **Запустите frontend-сервер**
    ```bash
    npm run dev
