@@ -15,10 +15,13 @@
 2. **Установите зависимости**
    ```bash
    npm install
+3. **Создайте mock-API с помощью json-server**
+   ```bash
+   npm install -g json-server 
 4. **Запустите backend-сервер**
    ```bash
    json-server --watch public/data.json --port 3001
-6. **Запустите frontend-сервер**
+5. **Запустите frontend-сервер**
    ```bash
    npm run dev
 Готово! Наслаждайтесь!
