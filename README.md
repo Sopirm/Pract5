@@ -11,14 +11,14 @@
 1. **Клонируйте репозиторий**
    ```bash
    git clone https://github.com/Sopirm/Pract5.git
-   cd Pract5```
+   cd Pract5
 2. **Установите зависимости**
    ```bash
-   npm install```
+   npm install
 4. **Запустите backend-сервер**
    ```bash
-   npx json-server --watch db.json --port 30015```
+   npx json-server --watch db.json --port 30015
 6. **Запустите frontend-сервер**
    ```bash
-   npm run dev```
+   npm run dev
 Готово! Наслаждайтесь!
