@@ -10,6 +10,7 @@ function App() {
  const { toggleTheme } = useContext(ThemeContext);
  return (
  <Container>
+  
  <Typography variant="h3" component="h1" align="center" sx={{ my: 4 }}>
  Интернет-магазин
  </Typography>
