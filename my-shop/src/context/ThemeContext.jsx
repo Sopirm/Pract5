@@ -12,6 +12,9 @@ export const ThemeContextProvider = ({ children }) => {
  const theme = createTheme({
  palette: {
  mode,
+ background: {
+ default: mode === 'light' ? '#F5E6D3' : '#121212',
+ },
  },
  });
  return (

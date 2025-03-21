@@ -37,9 +37,11 @@ const ProductList = () => {
       <FilterPanel onFilterChange={(category) => dispatch(setCategory(category))} />
       <SortPanel onSortChange={(sortBy) => dispatch(setSortBy(sortBy))} />
       <SearchBar onSearchChange={(query) => dispatch(setSearchQuery(query))} />
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px', padding: '20px' }}>
         {sortedProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <div style={{ width: '400px', height: '475px', border: '1px solid #ccc', borderRadius: '8px', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <ProductCard key={product.id} product={product} style={{ flex: '1' }} />
+          </div>
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+
 const SortPanel = ({ onSortChange }) => {
  const sortOptions = [
  { value: 'default', label: 'По умолчанию' },
@@ -7,8 +8,12 @@ const SortPanel = ({ onSortChange }) => {
  { value: 'priceDesc', label: 'По цене (убывание)' },
  { value: 'rating', label: 'По рейтингу' },
  ];
+
  return (
- <FormControl fullWidth sx={{ my: 2 }}>
+ <FormControl fullWidth sx={{ 
+   my: 2, 
+   backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#000000' : '#FFFFFF' 
+ }}>
  <InputLabel>Сортировка</InputLabel>
  <Select
  label="Сортировка"
@@ -24,4 +29,5 @@ const SortPanel = ({ onSortChange }) => {
  </FormControl>
  );
 };
+
 export default SortPanel;
